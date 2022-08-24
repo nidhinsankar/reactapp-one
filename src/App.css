@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  height: 100vh;
+  width: 100%;
+  color: #f1f1f1;
+  background-color: #111;
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input,
+button,
+textarea {
+  font: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+.com-container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  height: calc(100vh - 130px);
+  /* height: 400px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.com-vertical-container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  height: calc(50vh - 130px);
+  /* height: 400px; */
+}
+
+
+.box-container {
+  /* height: calc(100vh - 120px); */
+  height: auto;
+}
+
+.chartJS {
+  height: 300px !important; 
+}
+
+.react-stockchart {
+  height: 100% !important;
 }
